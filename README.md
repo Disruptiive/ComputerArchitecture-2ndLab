@@ -80,4 +80,4 @@ Bλέπουμε ότι το ```system.clk_domain.clock``` παραμένει 100
 Αν υποθέσουμε ότι όλη η μνήμη L2 κοστίζει όσο όλη η μνήμη L1. Βλέποντας τις cache τιμές ενός ryzen 3700x επεξεργαστή L1: 512kB L2:4MB, άρα για κάθε byte πληρώνω 8 φορές περισσότερο την L1 cache σε σχέση με την L2. Υποθέτω ότι το συνολικό κόστος για την αύξηση του associativity είναι το 1/10 από το συνολικό της L2 και L1 καθώς υπάρχουν και microcontrollers με πολύ μικρότερες cache που χρησιμοποιούν 2 way και 4 way associative.
 Καταλήγω επομένως στον τύπο (δεν βρήκα κάπου πως επηρεάζεται το κόστος από το cacheline size):
 
-![formula](https://user-images.githubusercontent.com/43075884/146547124-289e2b88-f291-4fc4-b273-4ccd8fc18197.png)
+![formula2](https://user-images.githubusercontent.com/43075884/146547346-0db1426a-5e4d-4c79-aacc-241e90962b0c.png)
